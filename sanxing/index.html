@@ -1,0 +1,2985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Galaxy S7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        /*background-image: url("images/bg.jpg");*/
+        background: white;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        /*background-image: url("images/bg.jpg");*/
+        text-align: center;
+        font-size: 18px;
+        background: rgba(255,255,255,0);
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+        /* css  样式*/
+    .img1{
+        display: block;
+        position: absolute;
+        /*margin: 9% auto;*/
+        top:9%;
+        left: 1%;
+        z-index: 0;
+    }
+    .img12{
+        display: block;
+        position: absolute;
+        /*margin: 2% auto;*/
+        top:2%;
+        z-index: 1;
+        left:8% ;
+    }
+    .img13{
+        position: absolute;
+        display: block;
+        z-index: -1;
+        /*margin: 22% auto;*/
+        top:18%;
+        left:22%;
+    }
+    .img14{
+        display: block;
+        position: absolute;
+        z-index: 3;
+        /*margin: 60% auto;*/
+        top:40%;
+        left:0%;
+    }
+    /*img_up4*/
+    .img_up4{
+        display: block;
+        position: absolute;
+        z-index: 15;
+        /*margin: 60% auto;*/
+        top:0%;
+        /*left:24%;*/
+        left:90%;
+        opacity:0;
+    }
+      /*img_up1*/
+    .img_up1{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        /*margin: 60% auto;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img_middle*/
+    .img_middle{
+        display: block;
+        position: absolute;
+        z-index: 16;
+        /*margin: 60% auto;*/
+        top:50%;
+        /*top:98%;*/
+        left:-90%;
+        opacity: 0;
+    }
+    /*img_middle1*/
+    .img_middle1{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        /*margin: 60% auto;*/
+        /*top:56%;*/
+        top:30%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img_bottom4*/
+    .img_bottom4{
+        display: block;
+        position: absolute;
+        z-index: 16;
+        /*margin: 60% auto;*/
+        /*top:51%;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*danshou*/
+    .danshou{
+        display: block;
+        position: absolute;
+        z-index: 17;
+        /*margin: 60% auto;*/
+        top:0%;
+        left:0%;
+        opacity:0;
+    }
+    /*shushi*/
+    .shushi{
+        display: block;
+        position: absolute;
+        z-index: 15;
+        /*margin: 60% auto;*/
+        /*top:75%;*/
+        /*left:15%;*/
+        opacity: 0;
+    }
+    /*qianhou*/
+    .qianhou{
+        display: block;
+        position: absolute;
+        top:0%;
+        left:0%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*第四页 img_back*/
+    .img_back{
+        display: block;
+        position: absolute;
+        top:0%;
+        left:0%;
+        z-index: 15;
+        opacity: 1;
+    }
+    /*img_back1*/
+    .img_back1{
+        display: block;
+        position: absolute;
+        top:0%;
+        left:0%;
+        z-index: 15;
+        opacity: 1;
+    }
+    /*chufa*/
+    .chufa1{
+        display: block;
+        position: absolute;
+        top:16%;
+        left:53%;
+        z-index: 16;
+        opacity: 1;
+    }
+    /*chufa2*/
+    .chufa2{
+        display: block;
+        position: absolute;
+        top:25%;
+        left:15%;
+        z-index: 16;
+        opacity: 1;
+    }
+    /*chufa3*/
+    .chufa3{
+        display: block;
+        position: absolute;
+        top:60%;
+        left:40%;
+        z-index: 16;
+        opacity: 1;
+    }
+    /*jingtou*/
+    .jingtou{
+        display: block;
+        position: absolute;
+        top:8%;
+        left:57%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*jingtou2*/
+     .jingtou2{
+         display: block;
+         position: absolute;
+         top:0%;
+         left:0%;
+         z-index: 16;
+         opacity: 1;
+     }
+     /*size*/
+    .size{
+        display: block;
+        position: absolute;
+        top:28%;
+        left:10%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*jingtou3*/
+    .jingtou3{
+        display: block;
+        position: absolute;
+        top:0%;
+        left:0%;
+        z-index: 16;
+        opacity: 1;
+    }
+    /*xiping*/
+    .xiping{
+        display: block;
+        position: absolute;
+        top:58%;
+        left:42%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*img_6*/
+    .img_6{
+        display: block;
+        position: absolute;
+        /*top:40%;*/
+        top:0%;
+        left:-80%;
+        z-index: 16;
+        opacity: 0;
+    }
+    /*img_7*/
+    .img_7{
+        display: block;
+        position: absolute;
+        /*top:40%;*/
+        /*top:38%;*/
+        top:0%;
+        left:-70%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*img_8*/
+    .img_8{
+        display: block;
+        position: absolute;
+        top:0%;
+        /*left:47%;*/
+        left:90%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*img_8_1*/
+    .img_8_1{
+        display: block;
+        position: absolute;
+        top:0%;
+        /*left:47%;*/
+        left:90%;
+        z-index: 15;
+        opacity: 1;
+    }
+    /*img_9*/
+    .img_9{
+        display: block;
+        position: absolute;
+        /*top:16%;*/
+        top:0%;
+        left:-80%;
+        z-index: 1;
+        opacity: 0;
+    }
+    /*img_10*/
+    .img_10{
+        display: block;
+        position: absolute;
+        top:0%;
+        left:60%;
+        z-index: 15;
+        opacity: 0;
+    }
+    /*img_10_1*/
+    .img_10_1{
+        display: block;
+        position: absolute;
+        top:0%;
+        left:0%;
+        z-index: 15;
+        opacity: 0;
+    }
+    .img15{
+        display: block;
+        position: absolute;
+        z-index: 3;
+        /*margin: 92% auto;*/
+        top:3%;
+        left:0%;
+    }
+    .img15_1{
+        display: block;
+        position: absolute;
+        z-index: 10;
+        /*margin: 92% auto;*/
+        /*top:50%;*/
+        opacity: 0;
+        top:0%;
+        left:0%;
+    }
+    .img15_1_1{
+        display: block;
+        position: absolute;
+        z-index: 10;
+        /*margin: 92% auto;*/
+        /*top:50%;*/
+        opacity: 0;
+        top:30%;
+        left:3%;
+    }
+    .img16{
+        display: block;
+        position: absolute;
+        z-index: 4;
+        /*margin: 45% auto;*/
+        opacity:0;
+        /*top:35%;*/
+        top:0%;
+        left:0%;
+    }
+    .img16_1{
+        display: block;
+        position: absolute;
+        z-index: 4;
+        opacity: 0;
+        top:45%;
+        left:55%;
+    }
+    .img17{
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top:78%;
+        left:37%;
+    }
+    .img18{
+        display: block;
+        position: absolute;
+        z-index: 5;
+        /*margin: 136% auto;*/
+        top:95%;
+        left: 47%;
+    }
+    .img1{
+        top:0%;
+        left: 0%;
+    }
+    .img21{
+        display: block;
+        position: absolute;
+        /*z-index: -1;*/
+        z-index:10;
+        /*margin: 25% auto;*/
+        top:0%;
+        left:0%;
+    }
+    .img21_down{
+        display: block;
+        position: absolute;
+        /*z-index: -1;*/
+        z-index:10;
+        /*margin: 25% auto;*/
+        top:47%;
+        left: 0%;
+    }
+    .img22{
+        display: block;
+        position: absolute;
+        z-index: 10;
+        /*margin: 90% auto;*/
+        top:59%;
+        left: 21%;
+        /*left:80%;*/
+        opacity:0;
+    }
+    .img22_up{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        /*margin: 90% auto;*/
+        top:10%;
+        left:45%;
+        opacity: 0;
+        /*left:80%;*/
+    }
+    .img31{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        /*margin: 30% auto;*/
+        top:20%;
+        left: 7%;
+    }
+    .img32{
+        display: block;
+        position: absolute;
+        z-index: 15;
+        /*margin: 85% auto;*/
+        top:38%;
+        left:5%;
+    }
+    .img41{
+        display: block;
+        position: absolute;
+        z-index:-1;
+        /*margin: 28% auto;*/
+        top:20%;
+        left: 38%;
+    }
+    .img42{
+        display: block;
+        position: absolute;
+        z-index:-2;
+        /*margin: 45% auto;*/
+        top:32%;
+        left: 40%;
+    }
+    .img43{
+        display: block;
+        position: absolute;
+        z-index:-3;
+        /*margin: 68% auto;*/
+        top:48%;
+        left: 28%;
+    }
+    .img44{
+        display: block;
+        position: absolute;
+        z-index:-4;
+        top:65%;
+        left: 40%;
+    }
+    .img19{
+        display: block;
+        position: absolute;
+        z-index:25;
+        top:5%;
+        left:90%;
+    }
+    /*第三页图片*/
+    .img1_middle
+    {
+        display: block;
+        position: absolute;
+        z-index: 15;
+        top: 21%;
+        left: 30%;
+        opacity: 0;
+    }
+    /*img_up*/
+    .img_up{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        /*left:-20%;*/
+        /*left: 0%;*/
+        left:90%;
+        opacity: 0;
+    }
+    /*img_bottom*/
+    .img_down{
+        display: block;
+        position: absolute;
+        z-index: 12;
+        top: 70%;
+        /*left:-20%;*/
+        /*left: 0%;*/
+        left:-80%;
+        opacity: 0;
+    }
+    /*img_word*/
+    .img_word{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top: 66%;
+        left:2%;
+        opacity: 0;
+        /*left: 1%;*/
+    }
+    /*第7页*/
+    .img7_1{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top: 15%;*/
+        top:50%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img7_2*/
+     .img7_2{
+         display: block;
+         position: absolute;
+         z-index: 18;
+         top:0%;
+         /*left:22%;*/
+         right:-91%;
+         opacity: 0;
+     }
+     /*img7_3*/
+    .img7_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img7_4*/
+    .img7_4{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:22%;*/
+        /*left:1%;*/
+        left:-80%;
+        opacity: 0;
+    }
+    /*img7_5*/
+    .img7_5{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*第八页*/
+    .img8_1{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*top:80%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img8_2*/
+    .img8_2{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:28%;*/
+        top:10%;
+        left:0%;
+        opacity: 0;
+    }
+/*img8_3*/
+    .img8_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:55%;
+        left:40%;
+        opacity: 0;
+    }
+    /*img8_4*/
+    .img8_4{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:5%;
+        left:12%;
+        opacity: 0;
+    }
+    /*page9*/
+    .img9_1{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:10%;
+        /*left:1%;*/
+        left:-50%;
+        opacity: 0;
+    }
+    /*imge9_2*/
+    .img9_2{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:1%;*/
+        /*left:50%;*/
+        left:80%;
+        opacity: 0;
+    }
+    /*img9_3*/
+    .img9_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:50%;*/
+        top:90%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img9_4*/
+    .img9_4{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img9_5*/
+    .img9_5{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img10_1*/
+    .img10_1{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img10_2_1*/
+    .img10_2_1{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:0%;
+        left:40%;
+        opacity: 0;
+    }
+    .img10_2_2{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:36%;
+        left:40%;
+        opacity: 0;
+    }
+    .img10_2_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:39%;
+        left:40%;
+        opacity: 0;
+    }
+
+    /*img10_2*/
+    .img10_2{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:5%;*/
+        left:-90%;
+        opacity: 0;
+    }
+    /*img10_2_4*/
+    .img10_2_4{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:0%;
+        /*left:18%;*/
+        left:-90%;
+        opacity: 0;
+    }
+    /*img10_3*/
+    .img10_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:12%;*/
+        left:90%;
+        opacity: 0;
+    }
+    /*img10_2_5*/
+    .img10_2_5{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:0%;
+        /*left:40%;*/
+        left:90%;
+        opacity: 0;
+    }
+    /*img10_4*/
+    .img10_4{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:5%;*/
+        left:-90%;
+        opacity: 0;
+    }
+    /*img10_2_6*/
+    .img10_2_6{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:15%;*/
+        top:0%;
+        /*left:20%;*/
+        left:-90%;
+        opacity: 0;
+    }
+    /*img10_5*/
+    .img10_5{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:12%;*/
+        left:90%;
+        opacity: 0;
+    }
+    /*第十一页*/
+    .img11_1{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        top:0%;
+        /*left:1%;*/
+        left:-80%;
+        opacity: 0;
+    }
+    .img11_2{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        top:0%;
+        /*left:7%;*/
+        left:80%;
+        opacity: 0;
+    }
+    /*img11_3*/
+    .img11_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        top:0%;
+        /*left:1%;*/
+        left:-80%;
+        opacity: 0;
+    }
+    /*img11_4*/
+    .img11_4{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:35%;*/
+        top:80%;
+        left:0%;
+        /*left:-80%;*/
+        opacity: 0;
+    }
+    /*img11_5*/
+    .img11_5{
+        display: block;
+        position: absolute;
+        z-index: 30;
+        top:0%;
+        /*left:18%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img11_6*/
+    .img11_6{
+        display: block;
+        position: absolute;
+        z-index: 30;
+        top:0%;
+        /*left:10%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*page12*/
+    .img12_1{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:3%;*/
+        left:82%;
+        opacity: 0;
+    }
+    /*img12_2*/
+    .img12_2{
+        display: block;
+        position: absolute;
+        z-index: 21;
+        top:0%;
+        /*left:1%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img12_3*/
+    .img12_3{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:1%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img12_4*/
+    .img12_4{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:62%;*/
+        left:60%;
+        opacity: 0;
+    }
+    /*img12_5*/
+    .img12_5{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:1%;*/
+        left:-50%;
+        opacity: 0;
+    }
+/*img12_6*/
+    .img12_6{
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img12_7*/
+    .img12_7{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*img12_8*/
+    .img12_8{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:40%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*第十三页*/
+    .img13_1{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        left:80%;
+        /*left:80%;*/
+        opacity: 0;
+    }
+    .img13_1_1{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        left:0%;
+        /*left:80%;*/
+        opacity: 0;
+    }
+    /*img13_2*/
+    .img13_2{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:27%;*/
+        left:80%;
+        opacity: 0;
+    }
+    /*img13_3*/
+    .img13_3{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:10%;*/
+        left:-80%;
+        opacity: 0;
+    }
+    /*img13_4*/
+    .img13_4{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:10%;*/
+        left:-80%;
+        opacity: 0;
+    }
+    /*img13_5*/
+    .img13_5{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:45%;*/
+        left:80%;
+        opacity: 0;
+    }
+    /*img13_6*/
+    .img13_6{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:50%;*/
+        left:90%;
+        opacity: 0;
+    }
+    /*第十四页*/
+    .img14_1{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:0%;
+        /*left:2%;*/
+        left: 0%;
+        /*left:90%;*/
+        opacity: 0;
+    }
+    /*img14_2*/
+    .img14_2{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:00%;
+        /*left:70%;*/
+        left:0%;
+        /*left: -30%;*/
+        opacity: 0;
+    }
+    /*img14_3*/
+    .img14_3{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        /*top:63%;*/
+        top: 0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*page15*/
+    /*img15_11*/
+    .img15_11{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        /*top:63%;*/
+        top:0%;
+        /*left:1%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img15_12*/
+    .img15_12{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        /*top:63%;*/
+        top: 0%;
+        /*left:58%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img15_13*/
+    .img15_13{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top: 70%;
+        /*left:60%;*/
+        left: 0%;
+        opacity: 0;
+    }
+    /*第十六页*/
+    .img16_1_1{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        /*top: 9%;*/
+        top:0%;
+        left: 0%;
+        opacity: 0;
+    }
+    /*img16_1_2*/
+    .img16_1_2{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        /*top: 70%;*/
+        top:0%;
+        /*top:1%;*/
+        left: 0%;
+        opacity: 0;
+    }
+    /*img16_1_3*/
+    .img16_1_3{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top: 70%;*/
+        top:0%;
+        /*top:1%;*/
+        /*left: 1%;*/
+        left:0%;
+        opacity: 0;
+    }
+    /*img16_1_4*/
+    .img16_1_4{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top: 70%;*/
+        top:0%;
+        /*top:1%;*/
+        left: 0%;
+        opacity: 0;
+    }
+    /*img16_1_5*/
+    .img16_1_5{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top: 70%;*/
+        top:25%;
+        /*top:1%;*/
+        left: 50%;
+        opacity: 0;
+    }
+    /*第十七页*/
+    /*img17_1*/
+    .img17_1{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top: 70%;*/
+        top:0%;
+        /*top:1%;*/
+        left: 0%;
+        opacity: 0;
+    }
+    /*img17_2*/
+    .img17_2{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:10%;*/
+        top:36%;
+        left: 0%;
+        opacity: 0;
+    }
+    /*img17_3*/
+    .img17_3{
+        display: block;
+        position: absolute;
+        z-index: 18;
+        /*top:70%;*/
+        top:0%;
+        left: 0%;
+        opacity: 0;
+    }
+    .img17_4{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        top:0%;
+        /*left: 58%;*/
+        left:0%;
+        opacity: 0;
+    }
+    .img17_5{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top:70%;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    .img17_6{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top:80%;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    /*第十八页*/
+    .img18_1{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        top:0%;
+        /*left: 1%;*/
+        left:0%;
+        opacity: 0;
+    }
+    .img18_2{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top:15%;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    .img18_3{
+        display: block;
+        position: absolute;
+        z-index: 19;
+        /*top: 30%;*/
+        top:0%;
+        left:0%;
+        opacity: 0;
+    }
+    .word1{
+        position: absolute;
+        display: block;
+        z-index: 12;
+        left:25%;
+        top: 23%;
+        opacity: 0;
+    }
+    .word3{
+        position: absolute;
+        display: block;
+        z-index: 12;
+        left:53%;
+        top: 35%;
+        opacity: 0;
+    }
+    @media screen and (max-width: 530px ) {
+        .swiper-wrapper {
+            width:100%;
+            margin: 0 auto;
+        }
+
+        .div_qrccode {
+            visibility: hidden;
+            display: block;
+            position: absolute;
+            top: 25%;
+            left: -40%;
+            z-index: 10;
+        }
+        .div_qrccode1s{
+            visibility: hidden;
+            display: block;
+            position: absolute;
+            top: 8%;
+            /*left: 90%;*/
+            right: -95%;
+            z-index: 10;
+            text-align: left;
+            width: 500px;
+            display: none;
+
+        }
+        .div_qrccode1s1{
+            visibility: hidden;
+            display: block;
+            position: absolute;
+            top: 56%;
+            /*left: 90%;*/
+            right: 98%;
+            z-index: 10;
+            text-align: left;
+            width: 500px;
+            display: none;
+
+        }
+        /*文字样式控制*/
+       /* .word1{
+            position: absolute;
+            display: block;
+            z-index: 12;
+            left:23%;
+            top: 30%;
+            opacity: 0;
+        }
+        .word3{
+            position: absolute;
+            display: block;
+            z-index: 12;
+            left:53%;
+            top: 40%;
+            opacity: 0;
+        }*/
+    }
+    .word4{
+        position: absolute;
+        display: block;
+        z-index: 30;
+        /*left:85%;*/
+        left:98%;
+        top: 5%;
+        opacity:0;
+    }
+    .img1_1{
+        position: absolute;
+        display: block;
+        z-index: 30;
+        /*left:0%;*/
+      /*  left:80%;
+        top: 5%;*/
+        opacity:0;
+    }
+    .imga{
+        position: absolute;
+        display: block;
+        z-index: 30;
+        left:0%;
+        opacity:1;
+    }
+    .img1_2{
+        position: absolute;
+        display: block;
+        z-index: 10;
+        /*left:0%;*/
+      /*  left:-90%;
+        top: 56%;*/
+        opacity:0;
+    }
+    @media screen and (min-width: 530px ){
+        .swiper-wrapper{
+            width:530px;
+            margin: 0 auto;
+        }
+        .div_qrccode{
+            visibility: visible;
+            display: block;
+            position: absolute;
+            top: 40%;
+            left: -60%;
+            z-index: 10;
+
+        }
+        .div_qrccode1s{
+            visibility: visible;
+            display: block;
+            position: absolute;
+            top: 0%;
+            right:-95%;
+            /*left: 90%;*/
+            z-index: 10;
+            text-align: left;
+            width: 500px;
+
+        }
+        .div_qrccode1s1{
+            visibility: visible;
+            display: block;
+            position: absolute;
+            top: 56%;
+            right:98%;
+            /*left: 90%;*/
+            z-index: 10;
+            text-align: left;
+            width: 500px;
+        }
+        /*文字样式控制*/
+       /* .word1{
+            position: absolute;
+            display: block;
+            z-index: 12;
+            left:23%;
+            top: 15%;
+            opacity: 0;
+        }
+        .word3{
+            position: absolute;
+            display: block;
+            z-index: 12;
+            left:53%;
+            top: 30%;
+            opacity: 0;
+        }*/
+
+    }
+
+    </style>
+</head>
+<script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1258115872'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258115872%26online%3D1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--
+<script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+   console.log(unescape("%3Cspan id='cnzz_stat_icon_1258115872'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258115872' type='text/javascript'%3E%3C/script%3E"));
+</script>
+-->
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide section1" >
+                <!-- 1 logo1-->
+                <!--<div class="div_qrccode1s"><img src="image/1/8.png"  height="100%" width="100%"></div>-->
+                <div class="img1_1"><img src="image/1_1/banner_up.png"  height="100%" width="100%"></div>
+                <!--<img class="img12" src="images/logo.png" height="6%" width="32%">-->
+                <!--<img class="img1" src="images/phone.png" height="91%" width="96%">-->
+                <img src="image/1/beijing.png" height="100%" width="100%">
+                <!--<img class="img13" src="images/p1.jpg" height="64%" width="56%">-->
+                <!--<img class="img14" src="images/t1.jpg" height="10%" width="25%">-->
+                <!--<img class="animated img15" src="images/p1_t2.png" height="13%" width="37%">-->
+                <!-- logoS7-->
+                <img class="animated img15" src="image/1/article/s7.png" height="70%" width="100%">
+                <!-- logo2-->
+                <!--<img class="div_qrccode1s1"  src="image/1/6.png"  height="18%" width="">-->
+                <img class="img1_2"  src="image/1_1/banner_left.png"  height="100%" width="100%">
+                <!-- logo3-->
+                <img class="animated img15_1"src="image/1_1/phone.png"   height="100%" width="100%">
+                 <!-- 文字-->
+                <img class="animated img16" src="image/1_1/wenzi.png" height="100%" width="100%">
+                <!--<img class="animated img16_1" src="image/1/article/difficult.png" height="5%" width="20%">-->
+                <!--<img class="animated img16" src="images/p1_t1.png" height="16%" width="5%">-->
+
+                <!--<img class="animated img17" src="images/share.png" height="25%" width="25%">-->
+                <img class="animated img18" src="images/tips.png" height="4%" width="5%">
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%" onclick="click()">
+                <div id="result" style="visibility: hidden" > </div>
+            </div>
+
+            <!-- 第二页-->
+            <div class="swiper-slide section2">
+                <!--<img class="img14" src="images/t1.jpg" height="10%" width="25%">-->
+                <!--<img class="animated img17" src="images/share.png" height="25%" width="25%">-->
+                <!--<img class="animated img18" src="images/tips.png" height="4%" width="5%">-->
+                <!--<img class="img12" src="images/logo.png" height="6%" width="32%">-->
+                <!-- 背景-->
+                <!--<img class="img1" src="images/phone.png" height="91%" width="96%">-->
+                <img class="img1" src="image/2/bk.png" height="100%" width="100%">
+
+                <img class="imga" src="image/2/frame.png" height="100%" width="100%">
+                <!-- left_up-->
+                <!--<img class="animated img21" src="images/p2.png" height="43%" width="79%">-->
+                <img class="animated img21" src="image/2/7.png" height="47%" width="80%">
+                 <!-- left_down-->
+                <img class="animated img21_down"src="image/2/4.png" height="55%" width="52%" >
+                 <!--right_down-->
+                <img class="animated img22" src="image/2/6.png" height="41%" width="79%">
+                  <!--right_up-->
+                <img class="animated img22_up" src="image/2/a1/right_up.png" height="49%" width="55%">
+                <!-- word1-->
+                <img class="animated word1" src="image/2/a1/2.png" height="20%" width="30%" >
+                <!-- word3-->
+                <img class="animated word3" src="image/2/a1/3.png" height="20%" width="30%" >
+                <!-- word4-->
+                <img class="animated word4" src="image/2/a1/cep.png" height="20%" width="10%" >
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+            </div>
+
+               <!--第三页-->
+            <div class="swiper-slide section3">
+                <!-- background-->
+                <img class="img1" src="image/3/1.png" height="100%" width="100%">
+
+                <!-- middle-->
+                <img class="img1_middle" src="image/3/a3/middle.png" height="64%" width="100%">
+                <!-- word-->
+                 <!--<img src="image/3/a3/word_middle.png"  height="30%" width="50%">-->
+                <img class="animated img32" src="image/3/a3/middle_1.png" height="15%" width="33%">
+
+                 <!-- up-->
+                 <img class="animated img_up" src="image/3/a3/up.png" height="32%" width="100%">
+                   <!-- bottom-->
+                <img class="animated img_down" src="image/3/a3/bottom.png" height="30%" width="100%">
+                 <!-- word1-->
+                <img class="animated img_word" src="image/3/a3/word1.png" height="5%" width="25%">
+
+
+                <!--<img class="animated img31" src="images/p3.png" height="48%" width="73%">-->
+                <!--<img class="animated img32" src="images/t4.jpg" height="10%" width="33%">-->
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+            </div>
+
+            <!-- 第四页-->
+            <div class="swiper-slide section4">
+
+                <!-- 背景-->
+                <!--<img class="img1" src="images/phone.png" height="91%" width="96%">-->
+                <img class="img1" src="image/4/back.png" height="100%" width="100%">
+                 <!--up -->
+                <img class="img_up4" src="image/4/a4/66.png" height="100%" width="100%">
+                 <!-- up1-->
+                <img class="img_up1" src="image/4/a4/22.png" height="100%" width="100%">
+                <!-- middle-->
+                <img class="img_middle" src="image/4/a4/middle.png" height="45%" width="100%">
+                <!-- 手机-->
+                <!-- middle-->
+                <!--<img class="img_middle1" src="image/4/a4/11.png" height="100%" width="100%">-->
+
+                <!-- bottom-->
+                <img class="img_bottom4" src="image/4/a4/33.png" height="100%" width="100%">
+                <!-- danshou-->
+                <img class="danshou" src="image/4/a4/77.png" height="100%" width="100%">
+                <!-- shushi-->
+                <!--<img class="shushi" src="image/4/a4/shushi.png" height="20%" width="5%">-->
+                <!--<img class="shushi" src="image/4/a4/shushi.png" height="" width="">-->
+                 <!-- 前后-->
+                <img class="qianhou" src="image/4/a4/55.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+            </div>
+
+
+             <!-- 第5页-->
+            <div class="swiper-slide section4">
+                <!-- 背景-->
+                <img class="img1" src="image/5/1.png" height="100%" width="100%">
+                <!-- beimian-->
+                <img class="animated img_back" src="image/5/new/beimian.png" height="100%" width="100%">
+                <!-- ji-->
+                <img class="animated img_back1" src="image/5/new/ji.png" height="100%" width="100%">
+
+                <!-- chufa-->
+                <img class="animated chufa1" src="image/5/chufa1.png"  height="6%" width="6%">
+                <img class="animated chufa2" src="image/5/chufa2.png"  height="6%" width="6%">
+                <img class="animated chufa3" src="image/5/chufa3.png"  height="6%" width="6%">
+                <!-- 镜头-->
+                <!--<img class="animated jingtou" src="image/5/jingtou.png"height="15%" width="30%">-->
+                <img class="animated jingtou" src="image/5/jingtou.png"height="20%" width="35%">
+                <!--<img class="animated size" src="image/5/size.png"  height="20%" width="35%">-->
+                <img class="animated size" src="image/5/size.png"  height="28%" width="50%">
+
+                <!--<img class="animated xiping" src="image/5/xiping.png" height="25%" width="45%">-->
+                <img class="animated xiping" src="image/5/xiping.png" height="28%" width="50%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+            <!-- 第六页-->
+            <div class="swiper-slide section4">
+                <!--<img class="img14" src="images/t1.jpg" height="10%" width="25%">-->
+                <!--<img class="animated img17" src="images/share.png" height="25%" width="25%">-->
+                <img class="animated img18" src="images/tips.png" height="4%" width="5%">
+                <!--<img class="img12" src="images/logo.png" height="6%" width="32%">-->
+                <!-- background-->
+                <img class="img1" src="image/6/new/back.png" height="100%" width="100%">
+                 <!-- 手机-->
+                <img class="animated img_6" src="image/6/new/shouji.png"  height="100%" width="100%">
+                 <!-- logo1-->
+                <img class="animated img_7"src="image/6/new/left_middle.png" height="100%" width="100%">
+                 <!-- logo2-->
+                <img class="animated img_8"src="image/6/new/right_up.png" height="100%" width="100%">
+                <!-- logo3-->
+                <img class="animated img_8_1"src="image/6/new/right_down.png" height="100%" width="100%">
+                <!-- phone up-->
+                 <img class="animated img_9"src="image/6/new/phone.png" height="100%" width="100%">
+                <!-- word-->
+                <img class="animated img_10"src="image/6/new/wenzi.png"  height="100%" width="100%" >
+                <!-- beiying-->
+                <img class="animated img_10_1"src="image/6/new/back2.png"  height="100%" width="100%" >
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+             <!-- 第7页-->
+            <div class="swiper-slide section4">
+                <!-- beijing-->
+                <img class="img1" src="image/7/new/backg.png" height="100%" width="100%">
+                <!-- 相机-->
+                  <img class="animated img7_1" src="image/7/new/xiangji.png"  height="100%" width="100%">
+                  <!-- right_down-->
+                <img  class="animated img7_2" src="image/7/new/right.png"  height="100%" width="100%" >
+                <!-- word2-->
+                <img class="animated img7_3"  src="image/7/new/f17.png"  height="100%" width="100%">
+                 <!-- left_up-->
+                <img  class="animated img7_4" src="image/7/new/left.png" height="100%" width="100%">
+                 <!-- word1-->
+                <img class="animated img7_5"  src="image/7/new/quanxiangshu.png" height="100%" width="100%" >
+
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+               <!-- <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+             <!-- 第八页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/8/new/back.png" height="100%" width="100%">
+                  <!-- imgg2-->
+                <img class="animated img8_1" src="image/8/new/phone.png" height="100%" width="100%">
+
+                <!-- img3-->
+                <img class="animated img8_2" src="image/8/new/wenzi.png" height="100%" width="100%">
+                <!--img4 -->
+              <!--  <img class="animated img8_3" src="image/8/3.png" height="10%" width="10%">
+                &lt;!&ndash; word4&ndash;&gt;
+                <img class="animated img8_4 "src="image/8/w8.png"  height="15%" width="75%">-->
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第九页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/9/new/background.png" height="100%" width="100%">
+                <!-- img9_1-->
+                <img class="animated img9_1" src="image/9/new/left.png" height="100%" width="100%">
+                <!-- img9_2-->
+                <img class="animated img9_2" src="image/9/new/right.png" height="100%" width="100%">
+                <!-- img9_3-->
+                <img class="animated img9_3" src="image/9/new/xiangji.png" height="100%" width="100%">
+                 <!-- img9_4-->
+                <img class="animated img9_4" src="image/9/new/f17.png" height="100%" width="100%">
+                 <!-- img9_5-->
+                <img class="animated img9_5" src="image/9/new/kebuzhuo.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第十页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/10/new/back.png" height="100%" width="100%">
+                 <!-- img10-->
+                <img class="animated img10_1" src="image/10/new/xingneng.png" height="100%" width="100%">
+                 <!-- nav 1-->
+                <img class="animated img10_2" src="image/10/new/1.png" height="100%" width="100%">
+                <!-- word1-->
+                <img class="animated img10_2_1" src="image/10/new/wenzi1.png"  height="100%" width="100%">
+                <!-- word2-->
+                <!--<img class="animated img10_2_2" src="image/10/CPU.png" height="2%" width="35%">-->
+                <!-- word3-->
+                <!--<img class="animated img10_2_3" src="image/10/4gb.png" height="2%" width="30%">-->
+
+                 <!-- nav 2-->
+                <img class="animated img10_3" src="image/10/new/2.png" height="100%" width="100%">
+                <!-- word4-->
+                <img class="animated img10_2_4" src="image/10/new/wenzi2.png"  height="100%" width="100%">
+
+                 <!-- nav 3-->
+                <img class="animated img10_4" src="image/10/new/3.png" height="100%" width="100%">
+                <!-- word5-->
+                <img class="animated img10_2_5" src="image/10/new/wenzi3.png"  height="100%" width="100%">
+
+                 <!-- nav 5-->
+                <img class="animated img10_5" src="image/10/new/4.png" height="100%" width="100%">
+
+                <!-- word6-->
+                <img class="animated img10_2_6" src="image/10/new/wenzi4.png"  height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第十一页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/11/background.png" height="100%" width="100%">
+                 <!-- logo1-->
+                <img class="animated img11_1" src="image/11/new/up.png" height="100%" width="100%">>
+
+                <!-- logo2-->
+                <img class="animated img11_2" src="image/11/new/deown.png" height="100%" width="100%">>
+                <!-- middle-->
+                <img class="animated img11_3" src="image/11/new/middle.png" height="100%" width="100%">
+                <!-- middle1-->
+                <img class="animated img11_4" src="image/11/new/phone.png" height="100%" width="100%">
+                <!-- up-->
+                <img class="animated img11_5" src="image/11/new/wenzi_down.png "height="100%" width="100%">
+                <!--<img class="animated img11_5" src="image/11/11_2.png" height="1%" width="1%">-->
+                <!-- down-->
+                <img class="animated img11_6" src="image/11/new/wenzi_up.png" height="100%" width="100%">>
+                <!--<img class="animated img11_6" src="image/11/11_1.png" height="1%" width="1%">-->
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+             <!--   <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+            <!-- 第十二页-->
+            <div class="swiper-slide section4">
+                <!-- banckground-->
+                <img class="img1" src="image/12/new/background.png" height="100%" width="100%">
+                <!-- logo-->
+                <img class="animated img12_1" src="image/12/new/up.png" height="100%" width="100%">
+                <!-- middle-->
+                <img class="animated img12_2" src="image/12/new/middle.png" height="100%" width="100%">
+                <!-- down-->
+                <img class="animated img12_3" src="image/12/new/down.png" height="100%" width="100%">
+                <!-- sim-->
+                <img class="animated img12_4" src="image/12/new/sim1.png" height="100%" width="100%">
+                <!-- sim1-->
+                <img class="animated img12_5" src="image/12/new/sim2.png" height="100%" width="100%">
+                <!-- 5g-->
+                <!--<img class="animated img12_6" src="image/12/5.png" height="7%" width="35%">-->
+                <img class="animated img12_6" src="image/12/new/wenzi_up.png" height="100%" width="100%">
+                <!-- 7-->
+                <!--<img class="animated img12_7" src="image/12/7.png" height="26%" width="70%">-->
+                <img class="animated img12_7" src="image/12/new/wenzi_middle.png" height="100%" width="100%">
+                <!--<img class="animated img12_8" src="image/12/4.png" height="10%" width="40%">-->
+                <img class="animated img12_8" src="image/12/new/wenzi_down.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第十三页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/13/new/bk.png" height="100%" width="100%">
+                 <!-- up-->
+                <img class="animated img13_1" src="image/13/new/uo.png" height="100%" width="100%">
+                <!-- down-->
+                <img class="animated img13_1_1" src="image/13/new/down.png" height="100%" width="100%">
+                <!-- left_up-->
+                <img class="animated img13_2" src="image/13/new/phone1.png" height="100%" width="100%">
+                <!-- left_down-->
+                <img class="animated img13_3" src="image/13/new/phone.png" height="100%" width="100%">
+                 <!-- left_up-->
+                <img class="animated img13_4" src="image/13/new/wenzi1.png" height="100%" width="100%">
+                 <!-- right_up-->
+                <img class="animated img13_5" src="image/13/new/down1.png" height="100%" width="100%">
+                 <!-- right_down-->
+                <img class="animated img13_6" src="image/13/new/down2.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+              <!--  <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第十四页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/14/new/back.png" height="100%" width="100%">
+                <!-- word1-->
+                <!--<img class="animated img14_1" src="image/14/ip68.png" height="8%" width="22%">-->
+                <img class="animated img14_1" src="image/14/new/picture1.png"  height="100%" width="100%">
+                 <!-- word2-->
+                <img class="animated img14_2" src="image/14/new/picture2.png" height="100%" width="100%">
+                 <!-- word3-->
+                <img class="animated img14_3" src="image/14/new/picture3.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+                <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">
+            </div>
+
+            <!-- 第十五页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/15/new/background.png" height="100%" width="100%">
+                <!-- picture1-->
+                <img class="animated img15_11"src="image/15/new/phone.png"  height="100%" width="100%">
+                 <!-- word1-->
+                <img class="animated img15_12" src="image/15/new/wenzi.png"  height="100%" width="100%">
+                <!-- word2-->
+                <!--<img class="animated img15_13" src="image/15/fangshui.png" height="2%" width="30%">-->
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+            <!--    <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第十六页-->
+            <div class="swiper-slide section4">
+                <img class="img1" src="image/16/new/background.png" height="100%" width="100%">
+                <!-- logo1-->
+                <img class="animated img16_1_1" src="image/16/new/up.png" height="100%" width="100%">
+                <!-- logo2-->
+                <img class="animated img16_1_2" src="image/16/new/down.png" height="100%" width="100%">
+                 <!-- middle-->
+                <img class="animated img16_1_3" src="image/16/new/middle.png" height="100%" width="100%">
+                <!-- down-->
+                <!--<img class="animated img16_1_4" src="image/16/Samsung.png" height="3%" width="30%">-->
+                <img class="animated img16_1_4" src="image/16/new/wenzi.png" height="100%" width="100%">
+                <!-- down1-->
+                <!--<img class="animated img16_1_5" src="image/16/sanxingzhuan.png" height="8%" width="40%">-->
+                <!--<img class="animated img16_1_5" src="image/16/sanxingzhuan.png" height="1%" width="1%">-->
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+             <!--   <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+            <!-- 第十七页-->
+            <div class="swiper-slide section4">
+                <!-- background-->
+                <img class="img1" src="image/17/new/bk.png" height="100%" width="100%">
+                 <!-- middle-->
+                <img class="animated img17_1" src="image/17/new/middle.png" height="100%" width="100%">
+                <!-- up-->
+                <img class="animated img17_2" src="image/17/new/up.png" height="100%" width="100%">
+                <!-- down-->
+                <img class="animated img17_3" src="image/17/new/down.png" height="100%" width="100%">
+                <!-- word1-->
+                <img class="animated img17_4" src="image/17/new/wenzi_up.png" height="100%" width="100%">
+                <!-- word2-->
+                <!--<img class="animated img17_5" src="image/17/6.png" height="8%" width="22%">-->
+                <img class="animated img17_5" src="image/17/new/wenzi_middle.png" height="100%" width="100%">
+                <!-- word2-->
+                <!--<img class="animated img17_6" src="image/17/5.png" height="8%" width="23%">-->
+                <img class="animated img17_6" src="image/17/new/wenzi_down.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+             <!--   <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+
+
+            <!-- 第十八页-->
+            <div class="swiper-slide section4">
+                <img class="img1" src="image/18/new/background.png" height="100%" width="100%">
+                  <!-- bac01-->
+                  <img class="animated img18_1" src="image/18/new/back.png" height="100%" width="100%">
+                  <!-- picture-->
+                <img class="animated img18_2" src="image/18/new/phone.png" height="100%" width="100%">
+                   <!-- word-->
+                <img class="animated img18_3" src="image/18/new/sanxing.png" height="100%" width="100%">
+
+                <img class="animated img19" src="images/audio_01.gif" height="5%" width="6%">
+             <!--   <img class="animated img41" src="images/t5.jpg" height="11%" width="23%">
+                <img class="animated img42" src="images/t6.jpg" width="15%" height="16%">
+                <img class="animated img43" src="images/t7.jpg" height="14%" width="42%">
+                <img class="animated img44" src="images/t8.jpg" height="15%" width="17%">-->
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper.min.js"></script>
+    <!-- Rotate-->
+    <!--<script src="js/jquery.rotate.min.js"></script>-->
+
+    <!-- Initialize Swiper -->
+    <script src="js/jquery-2.1.1.js" rel="stylesheet"></script>
+    <script>
+        var clickcount = 0;
+        $(document).ready(function(){
+            $(".img19").click(
+                  function(){
+                      clickcount+=1;
+                      console.log("clickcount>>" + clickcount);
+                      if(clickcount%2==1){
+                          console.log("isPlaying>>"+isPlaying + "   clickcount"+clickcount);
+                          if(isPlaying==true){
+                              stopBGMusic();
+                              $(".img19").attr("src","images/audio_02.gif");
+                          } else {
+                              playBGMusic();
+                              $(".img19").attr("src","images/audio_01.gif");
+                          }
+                      }
+                  }
+            );
+//            $(".div_qrccode1s").animate({
+//                right:'50%'
+//            });
+           /* setTimeout(function(){
+                $(".div_qrccode1s").animate({
+                    left:'2%',
+                    opacity:'0.5',
+                    left:'8%',
+                    opacity:'1'
+
+            });
+            },500);
+            setTimeout(function(){
+                $(".div_qrccode1s1").animate({
+                    right:'2%',
+                    opacity:'0.5',
+                    right:'4%',
+                    opacity:'1'
+
+                });
+            },500);
+            //Galaxy S7
+            setTimeout(function(){
+                $(".img16").animate({
+                    opacity:'0',
+                    opacity:'0.5',
+                    opacity:'1'
+
+                });
+            },1500);
+            //不一样所以
+            setTimeout(function(){
+                $(".img16_1").animate({
+                    opacity:'0.5',
+                    opacity:'1'
+
+                });
+            },2000);
+
+            setTimeout(function(){
+                $(".img15_1").animate({
+                 /!* top:'50%',
+                  left:'3%',*!/
+                    opacity:'0.5',
+                   opacity: 1
+                });
+            },1000);
+
+
+            setTimeout(function(){
+                $(".img1_1").animate({
+//                    left:'0%',
+                    opacity:'0.5',
+                    opacity:'1'
+                },1000);
+            });
+            setTimeout(function(){
+                $(".img1_2").animate({
+                    left:'0%',
+                    opacity:'0.5',
+                    opacity:'1'
+                });
+            },1000);
+            setTimeout(function(){
+                $(".img22_up").animate({
+                    opacity:0.5,
+//                    left:'45%',
+                    opacity:1
+                });
+            },4000);
+
+
+//            文字的控制
+            setTimeout(function(){
+                $(".word1").css('opacity','1');
+            },6000);
+            setTimeout(function(){
+                $(".word3").css('opacity','1');
+            },6000);
+            setTimeout(function(){
+                $(".word4").animate({
+                    opacity:'0.5',
+                    left:'85%',
+                    opacity:'1'
+                });
+            },3500);*/
+        });
+        var isPlaying = false;
+        var audio = document.createElement("audio");
+        audio.src="2.mp3";
+        document.getElementById("result").appendChild(audio);
+
+        function playBGMusic(){
+            isPlaying = true;
+            audio.play();
+            setTimeout(function(){
+                isPlaying = false;
+                audio.pause();
+                document.getElementById("result").removeChild(audio);
+            },200000);
+        }
+
+        function stopBGMusic(){
+            isPlaying = false;
+            audio.pause();
+        }
+
+        function img18(){
+            $(".img18").addClass("bouncein");
+            setTimeout(function(){
+                $(".img18").removeClass("bouncein");
+            },1500);
+            setTimeout(img18,1600);
+        }
+        function img19(){
+            $(".img19").addClass("rotatein");
+            setTimeout(function(){
+                $(".img19").removeClass("rotatein");
+            },1000);
+            setTimeout(img19,1010);
+        }
+        setTimeout(function(){
+            $(".img16").animate({
+                top:'2%'
+            });
+        },1000);
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+        spaceBetween: 30,//slide之间的距离（单位px）
+        mousewheelControl: true,
+        onInit: function(swiper){
+            $(".img16,.img15").addClass("fadeinup");
+            setTimeout(function(){
+                $(".img16,.img15").removeClass("fadeinup");//logo1
+            },1500);
+            $(".img17").addClass("tada");
+            setTimeout(function(){
+                $(".img17").removeClass("tada");
+            },1500);
+            $(".img21").css("opacity","0");
+
+            //img_down----
+            $(".img21_down").css("opacity","0");
+
+
+            img18();
+
+            img19();
+
+            playBGMusic();
+
+
+
+            ///////////////////////////////////////////////////////////////////////////////////
+            setTimeout(function(){
+                        $(".div_qrccode1s").animate({
+                            left:'2%',
+                            opacity:'0.5',
+                            left:'8%',
+                            opacity:'1'
+
+                        });
+                    },500);
+                        setTimeout(function(){
+                            $(".div_qrccode1s1").animate({
+                                right:'2%',
+                                opacity:'0.5',
+                                right:'4%',
+                                opacity:'1'
+
+                });
+            },500);
+            //Galaxy S7
+            setTimeout(function(){
+                $(".img16").animate({
+                    opacity:'0',
+                    opacity:'0.5',
+                    opacity:'1'
+
+                });
+            },1500);
+            //不一样所以
+            setTimeout(function(){
+                $(".img16_1").animate({
+                    opacity:'0.5',
+                    opacity:'1'
+
+                });
+            },2000);
+
+            setTimeout(function(){
+                $(".img15_1").animate({
+                    /* top:'50%',
+                     left:'3%',*/
+                    opacity:'0.5',
+                    opacity: 1
+                });
+            },1000);
+
+
+            setTimeout(function(){
+                $(".img1_1").animate({
+//                    left:'0%',
+                    opacity:'0.5',
+                    opacity:'1'
+                },1000);
+            });
+            setTimeout(function(){
+                $(".img1_2").animate({
+                    left:'0%',
+                    opacity:'0.5',
+                    opacity:'1'
+                });
+            },1000);
+            setTimeout(function(){
+                $(".img22_up").animate({
+                    opacity:0.5,
+//                    left:'45%',
+                    opacity:1
+                });
+            },4000);
+
+
+//            文字的控制
+            setTimeout(function(){
+                $(".word1").css('opacity','1');
+            },6000);
+            setTimeout(function(){
+                $(".word3").css('opacity','1');
+            },6000);
+            setTimeout(function(){
+                $(".word4").animate({
+                    opacity:'0.5',
+                    left:'85%',
+                    opacity:'1'
+                });
+            },3500);
+
+            //////////////////////////////////////////////////////////////////////////////////////////
+
+        },
+
+        onSlideChangeEnd: function(swiper){
+            switch (swiper.activeIndex){
+                case 0:
+                    $(".img16,.img15").addClass("fadeinup");
+                    setTimeout(function(){
+                        $(".img16,.img15").removeClass("fadeinup");
+                    },2000);
+                    $(".img17").addClass("tada");
+                    setTimeout(function(){
+                        $(".img17").removeClass("tada");
+                    },1500);
+                    break;
+
+                case 1:
+                    $(".img17").addClass("tada");
+                    setTimeout(function(){
+                        $(".img17").removeClass("tada");
+                    },1500);
+
+                    $(".img21").addClass("fadein");
+                    setTimeout(function(){
+                        $(".img21").removeClass("fadein");
+                        $(".img21").css("opacity","1");
+                    },3000);
+
+//       /*             img21_down  左下
+
+                    setTimeout(function(){
+                        $(".img21_down").animate({
+                            opacity:'0.5',
+//                                left:'21%',
+                            opacity:'1'
+                        });
+                    },3000);
+
+//                    $(".img22").addClass("fadeinright");
+//                    setTimeout(function(){
+//                        $(".img22").removeClass("fadeinright");
+//                    },1500);
+
+                        setTimeout(function(){
+                            $(".img22").animate({
+                                opacity:'0.5',
+//                                left:'21%',
+                                opacity:'1'
+                            });
+                        },1000);
+
+
+                    $(".img31").css("opacity","0");
+                    break;
+                case 2:
+                    $(".img21").css("opacity","0");
+
+
+//                     img21_down  设置样式
+                    $(".img21_down").css("opacity","0");
+
+
+                    $(".img31").addClass("fadein");
+                    setTimeout(function() {
+                        $(".img31").removeClass("fadein");
+                        $(".img31").css("opacity","1");
+                    },5000);
+
+                    $(".img17").addClass("tada");
+                    setTimeout(function(){
+                        $(".img17").removeClass("tada");
+                    },1500);
+
+                    $(".img32").addClass("fadeinright");
+                    setTimeout(function(){
+                        $(".img32").removeClass("fadeinright");
+                    },1500);
+
+                    $(".img41").css("opacity","0");
+                    $(".img42").css("opacity","0");
+                    $(".img43").css("opacity","0");
+                    $(".img44").css("opacity","0");
+                    //            正反双曲面
+                    setTimeout(function(){
+                        $('.img_word').css('opacity','1');
+                    },500);
+//                        img_up
+                        setTimeout(function(){
+                            $(".img_up").animate({
+                                opacity:'0.5',
+                                left:'0%',
+                                opacity:'1'
+                            });
+                        },800);
+//                        img_down
+                    setTimeout(function(){
+                        $(".img_down").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },800);
+//                        .img1_middle
+                    setTimeout(function(){
+                        $(".img1_middle").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },200);
+                    break;
+                case 3:
+                    $(".img31").css("opacity","0");
+
+                    $(".img17").addClass("tada");
+                    setTimeout(function(){
+                        $(".img17").removeClass("tada");
+                    },1500);
+
+                    $(".img41").addClass("fadeinright");
+                    setTimeout(function(){
+                        $(".img41").removeClass("fadeinright");
+                        $(".img41").css("opacity","1");
+                    },1500);
+                    setTimeout(function(){
+                        $(".img42").addClass("fadeinright");
+                        setTimeout(function(){
+                                $(".img42").removeClass("fadeinright");
+                            $(".img42").css("opacity","1");
+                        },1000);
+                    },1000);
+                    setTimeout(function(){
+                        $(".img43").addClass("fadeinright");
+                        setTimeout(function(){
+                            $(".img43").removeClass("fadeinright");
+                            $(".img43").css("opacity","1");
+                    },1000);
+                    },2000);
+
+                    setTimeout(function(){
+                        $(".img44").addClass("fadeinright");
+                        setTimeout(function(){
+                            $(".img44").removeClass("fadeinright");
+                            $(".img44").css("opacity","1");
+                        },1000);
+                    },3000);
+                //第四页开始
+                    //            单手动画
+                    setTimeout(function(){
+                        $('.danshou').animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },3000);
+//            shushi 动画
+                    setTimeout(function(){
+                        $('.shushi').animate({
+                            opacity:'0.5',
+                            top:'75%',
+                            left:'15%',
+                            heiht:'20%',
+                            width:'5%',
+                            opacity:'1'
+                        });
+                    },4500);
+//            qianhou 动画
+                    setTimeout(function(){
+                        $('.qianhou').animate({
+                            opacity:'0.5',
+                            top:'0',
+                            left:'0',
+                            opacity:'1'
+                        });
+                    },2000);
+//                        img_bottom4
+                        setTimeout(function(){
+                            $(".img_bottom4").animate({
+                                top:'0%',
+                                opacity:'1'
+                            },3500);
+                        });
+//                    img_middle
+                    setTimeout(function(){
+                        $(".img_middle").animate({
+                            left:'0%',
+                            opacity:'1'
+                        },500);
+                    });
+//                       img_middle1
+                    setTimeout(function(){
+                        $(".img_middle1").animate({
+                            top:'0%',
+                            opacity:'1'
+                        },2000);
+                    });
+                    //img_up4
+                    setTimeout(function(){
+                        $(".img_up4").animate({
+                            left:'0%',
+                            opacity:'1'
+                        },500);
+                    });
+//                        img_up1
+                    setTimeout(function(){
+                        $(".img_up1").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },3000);
+                    });
+                    break;
+                case 4:
+//                    chufa1 动画
+                    $(".chufa1").click(function(){
+                        $(".chufa1").animate({
+                            opacity:'0.5',
+                            height:'8%',
+                            width:'15%',
+                            left:'49%',
+                            opacity:'1'
+                        },2000);
+
+                        $(".jingtou").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },4000);
+                    });
+//                        jingtou2
+                    $(".chufa2").click(function(){
+                        $(".chufa2").animate({
+                            opacity:'0.5',
+                            height:'8%',
+                            width:'15%',
+                            left:'12%',
+                            opacity:'1'
+                        },2000);
+                        $(".size").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },2000);
+                    });
+//                        jingtou3
+                    $(".chufa3").click(function(){
+                        $(".chufa3").animate({
+                            opacity:'0.5',
+                            height:'8%',
+                            width:'15%',
+                            left:'36%',
+                            opacity:'1'
+                        },3000);
+                        $(".xiping").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },3000);
+                    });
+
+                    break;
+                case 5:
+//                        img_6 由上往下
+                        setTimeout(function(){
+                            $(".img_6").animate({
+                                opacity:'0.5',
+//                                top:'45%',
+                                left:'0%',
+                                opacity:'1'
+                            },2000);
+                        });
+//                        img_7
+                    setTimeout(function(){
+                        $(".img_7").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        },1000);
+                    });
+//                        img_8
+                    setTimeout(function(){
+                        $(".img_8").animate({
+                            opacity:'0.5',
+                            left:'5%',
+                            opacity:'1'
+                        },500);
+                    });
+//                        img_8_1
+                    setTimeout(function(){
+                        $(".img_8_1").animate({
+                            opacity:'0.5',
+                            left:'5%',
+                            opacity:'1'
+                        },1000);
+                    });
+//                        img_9
+                    setTimeout(function(){
+                        $(".img_9").animate({
+                            opacity:'0',
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        },3000);
+                    });
+//                        img_10
+                    setTimeout(function(){
+                        $(".img_10").animate({
+                             opacity:'1',
+                             left:'0%'
+                        },1000);
+                    },2000);
+//                        img_10_1
+                    setTimeout(function(){
+                        $(".img_10_1").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },4000);
+                    });
+                    break;
+                case 6:
+                    //                        img7_1
+                    setTimeout(function(){
+
+                        $(".img7_1").animate({
+                            top:'10%',
+                            opacity:'1',
+                            top:'0%'
+                        },800);
+                    });
+//                      img7_2
+                    setTimeout(function(){
+
+                        $(".img7_2").animate({
+//                            left:'10%',
+                            opacity:'0.5',
+                            right:'0%',
+                            opacity:'1'
+                        },1000);
+                    });
+//                    img7_2
+                    $(".img7_3").addClass("fadein");
+                    setTimeout(function(){
+                        $(".img7_3").removeClass("fadein");
+                        $(".img7_3").css("opacity","1");
+                    },2000);
+//                    //                      img7_4
+                    setTimeout(function(){
+
+                        $(".img7_4").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        },1000);
+                    });
+                    //                 img7_5
+                    $(".img7_5").addClass("fadein");
+                    setTimeout(function(){
+                        $(".img7_5").removeClass("fadein");
+                        $(".img7_5").css("opacity","1");
+                    },2000);
+                    break;
+                case 7:
+//                        img8_1
+                    setTimeout(function(){
+
+                        $(".img8_1").animate({
+                            opacity:'0.5',
+                            opacity:'1',
+                            top:'0%'
+                        },1000);
+                    });
+//                        //                      img_8
+                    setTimeout(function(){
+
+                        $(".img8_2").animate({
+                            opacity:'1',
+                            top:'0%'
+                        },800);
+                    },1000);
+                    //                      img_8
+                    setTimeout(function(){
+
+                        $(".img8_4").animate({
+                            opacity:'0.5',
+                            right:'0%',
+                            opacity:'1'
+                        },6000);
+                    });
+//                        img8_3
+                    setTimeout(function(){
+
+                        $(".img8_3").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },1000);
+                    });
+                 break;
+                case 8:
+//                        img9_1
+                    setTimeout(function(){
+
+                        $(".img9_1").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        },1500);
+                    });
+//                        img9_2
+                    setTimeout(function(){
+
+                        $(".img9_2").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        },2000);
+                    });
+//                        img9_3
+                    setTimeout(function(){
+                        $(".img9_3").animate({
+                            opacity:'0.5',
+                            top:'0%',
+                            opacity:'1'
+                        },2000);
+                    });
+//                        img9_4
+                    setTimeout(function(){
+                        $(".img9_4").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },1500);
+//                        img9_5
+                    setTimeout(function(){
+                        $(".img9_5").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },2000);
+                    break;
+                case 9:
+//                        img10_1
+                    setTimeout(function(){
+                        $(".img10_1").animate({
+                            opacity:'0.5',
+                            top:'0%',
+                            opacity:'1'
+                        });
+                    },500);
+//                        img10_2_1
+                    setTimeout(function(){
+                        $(".img10_2_1").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1000);
+                    //                        img10_2_2
+                    setTimeout(function(){
+                        $(".img10_2_2").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },1500);
+                    });
+                    //                        img10_2_1
+                    setTimeout(function(){
+                        $(".img10_2_3").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        },2000);
+                    });
+ //                   img10_2
+                    setTimeout(function(){
+                        $(".img10_2").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1000);
+//                   //                        img10_2_4
+                    setTimeout(function(){
+                        $(".img10_2_4").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1500);
+                    //                   img10_3
+                    setTimeout(function(){
+                        $(".img10_3").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1500);
+                    //                        img10_2_5
+                    setTimeout(function(){
+                        $(".img10_2_5").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2000);
+                    //                   img10_4
+                    setTimeout(function(){
+                        $(".img10_4").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2000);
+// //                        img10_2_6
+                    setTimeout(function(){
+                        $(".img10_2_6").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2600);
+                    //                   img10_5
+                    setTimeout(function(){
+                        $(".img10_5").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2500);
+                    break;
+                case 10:
+//                        img11_1
+                        setTimeout(function(){
+                            $(".img11_1").animate({
+                                opacity:'0.5',
+                                left:'0%',
+                                opacity:'1'
+                            },1000);
+                        });
+                    //                        img11_2
+                     setTimeout(function(){
+                          $(".img11_2").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                          },1000);
+                    });
+//                         //                        img11_3
+                    setTimeout(function(){
+                        $(".img11_3").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        },2000);
+                    });
+                    //                         //                        img11_4
+                    setTimeout(function(){
+                        $(".img11_4").animate({
+                            opacity:'0.5',
+                            top:'0%',
+                            opacity:'1'
+                        },3000);
+                    });
+//               img11_5
+                   setTimeout(function(){
+                    $(".img11_5").animate({
+                        opacity:'0.5',
+                        opacity:'1'
+                    });
+                 },4000);
+//             //               img11_6
+                    setTimeout(function(){
+                        $(".img11_6").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },3500);
+                    break;
+                case 11:
+//                        img12_1
+                    setTimeout(function(){
+                        $(".img12_1").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },800);
+                    //                        img12_2
+                    setTimeout(function(){
+                        $(".img12_2").animate({
+                            opacity:'0.5',
+//                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1200);
+                    //                        img12_3
+                    setTimeout(function(){
+                        $(".img12_3").animate({
+                            opacity:'0.5',
+//                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2000);
+                    //                        img12_4
+                    setTimeout(function(){
+                        $(".img12_4").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },3000);
+                    //                        img12_5
+                    setTimeout(function(){
+                        $(".img12_5").animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },3000);
+                    //                        img12_6
+                    setTimeout(function(){
+                        $(".img12_6").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },4000);
+//                      //                        img12_7
+                    setTimeout(function(){
+                        $(".img12_7").animate({
+                            opacity:'0',
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },5000);
+                    //                        img12_8
+                    setTimeout(function(){
+                        $(".img12_8").animate({
+                            opacity:'0.5',
+                            opacity:'1'
+                        });
+                    },4000);
+                    break;
+                case 12:
+//                        img13_1
+                        setTimeout(function(){
+                            $('.img13_1').animate({
+                                opacity:'0.5',
+                                left:'0%',
+                                opacity:'1'
+                            });
+                        },1000);
+                    //                        img13_1
+                    setTimeout(function(){
+                        $('.img13_1_1').animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1000);
+
+//                        img13_2
+                    setTimeout(function(){
+                        $('.img13_2').animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },1500);
+                    //                        img13_3
+                    setTimeout(function(){
+                        $('.img13_3').animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2000);
+                    //                        img13_4
+                    setTimeout(function(){
+                        $('.img13_4').animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },2500);
+                    //                        img13_5
+                    setTimeout(function(){
+                        $('.img13_5').animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },3000);
+                    //                        img13_6
+                    setTimeout(function(){
+                        $('.img13_6').animate({
+                            opacity:'0.5',
+                            left:'0%',
+                            opacity:'1'
+                        });
+                    },3500);
+                    break;
+                case 13:
+//                        img14_1
+                        setTimeout(function(){
+                            $('.img14_1').animate({
+                                opacity:'0',
+                                opacity:'0.5',
+
+                                opacity:'1'
+                            });
+                        },500);
+//                        img14_2
+                    setTimeout(function(){
+                        $('.img14_2').animate({
+                            opacity:'0',
+//                            left:'70%',
+                            opacity:'1'
+                        });
+                    },800);
+                    //                        img14_3
+                    setTimeout(function(){
+                        $('.img14_3').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },1200);
+                    break;
+                case 14:
+                //                        img15_11
+                    setTimeout(function(){
+                        $('.img15_11').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },800);
+                    //img15_12
+                    setTimeout(function(){
+                        $('.img15_12').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },1500);
+//                        img15_13
+                    setTimeout(function(){
+                        $('.img15_13').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },2000);
+                    break;
+                case 15:
+//                        img16_1_1
+                    setTimeout(function(){
+                        $('.img16_1_1').animate({
+                            opacity:'0',
+                            top:'0%',
+                            opacity:'1'
+                        });
+                    },500);
+//             //                        img16_1_2
+                    setTimeout(function(){
+                        $('.img16_1_2').animate({
+                            opacity:'0.5',
+                            top:'0%',
+                            opacity:'1'
+                        });
+                    },500);
+                    //             //                        img16_1_3
+                    setTimeout(function(){
+                        $('.img16_1_3').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },1000);
+                    //             //                        img16_1_4
+                    setTimeout(function(){
+                        $('.img16_1_4').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },1500);
+//                 img16_1_5
+                    setTimeout(function(){
+                        $('.img16_1_5').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },3000);
+                    break;
+                case 16:
+//                        img17_1
+                    setTimeout(function(){
+                        $('.img17_1').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },1000);
+//                        img17_2
+                    setTimeout(function(){
+                        $('.img17_2').animate({
+                            opacity:'0',
+                            top:'0%',
+                            opacity:'1'
+                        },2000);
+                    });
+                    //                        img17_3
+                    setTimeout(function(){
+                        $('.img17_3').animate({
+                            opacity:'0',
+                            top:'0%',
+                            opacity:'1'
+                        });
+                    },2000);
+                    //                        img17_4
+                    setTimeout(function(){
+                        $('.img17_4').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },3500);
+//                          height="8%" width="22%"
+                    //                        img17_5
+                    setTimeout(function(){
+                        $('.img17_5').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },4000);
+//                        img17_6
+//                          <img class="animated img17_6" src="image/17/5.png" height="8%" width="23%">
+                    setTimeout(function(){
+                        $('.img17_6').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },4500);
+                    break;
+                case 17:
+                    setTimeout(function(){
+                        $('.img18_1').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },800);
+
+                    setTimeout(function(){
+                        $('.img18_2').animate({
+                            opacity:'0',
+                            opacity:'1'
+                        });
+                    },1000);
+                    setTimeout(function(){
+                        $('.img18_3').animate({
+                            opacity:'0.5',
+                            opacity:'1'
+
+                        });
+                    },1500);
+
+//                        移除节点
+//                    $('.img18_1').remove();
+                       $(function(){
+                           $(".img18_3").rotate({
+                               bind:
+                               {
+                                   mouseover:function(){
+                                       $(this).rotate({animateTo:180});
+                                   },
+                                   mouseout:function(){
+                                       $(this).rotate({animateTo:0});
+                                   }
+                               }
+                           });
+                       });
+                    break;
+            }}
+
+
+        //动画效果实现
+    });
+    </script>
+</body>
+</html>
